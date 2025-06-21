@@ -23,36 +23,37 @@
                 android:id="@+id/profile_image"
                 android:layout_width="@dimen/profile_image_size"
                 android:layout_height="@dimen/profile_image_size"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="60dp"
-                android:src="@drawable/avatar_9"/>
+                app:srcCompat="@drawable/avatar_7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/profile_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/profile_image"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="50dp"
-                tools:text="First Last"
-                android:textSize="24sp"
+                android:text="Yusa Sagli"
+                android:textAllCaps="true"
                 android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:textAllCaps="true"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_image" />
 
             <TextView
                 android:id="@+id/profile_bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/profile_name"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="10dp"
                 android:text="@string/profile_bio_text"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_name" />
 
             <TextView
                 android:id="@+id/profile_hobby_header"
